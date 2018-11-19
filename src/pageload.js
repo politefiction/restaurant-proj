@@ -1,20 +1,25 @@
 const loadPage = () => {
     let content = document.querySelector("#content")
 
-    let heading = document.createElement('h1');
-    heading.textContent = "Welcome to D'Angelo's!";
+    let heading = document.createElement('div');
+    heading.setAttribute("id", "heading");
+
+    let title = document.createElement('h1');
+    title.textContent = "Welcome to D'Angelo's!";
 
     let copy = document.createElement('p');
-    copy.setAttribute("style", "font-style: italic;");
-    copy.textContent = "Serving up Italian meals with names vaguely inspired by musical artist D'Angelo since 2018";
+    copy.setAttribute("id", "copy");
+    copy.textContent = "Serving up classic Italian favorites with names vaguely inspired by musical artist D'Angelo since 2018";
 
-    //let image = document.createElement("img");
-    //image.src = "/home/chelsi/Pictures/kaboompics_pizza.jpg" ;
-    //image.setAttribute("style", "width: 250px;")
+    [title, copy].map(e => { heading.appendChild(e) })
 
-    [heading, copy].forEach(element => {
-        content.appendChild(element)
-    })
+    let image = new Image(250);
+    image.src = "/home/chelsi/Pictures/kaboompics_pizza.jpg";
+
+    let testDiv = document.createElement('div');
+    testDiv.setAttribute("id", "test");
+
+    [heading, image, testDiv].forEach(element => { content.appendChild(element) })
 }
 
 export default loadPage;

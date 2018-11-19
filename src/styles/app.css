@@ -1,0 +1,22 @@
+div {
+    background-color:#b5bba3;
+    padding:10px;
+}
+
+#copy {
+    font-style: italic;
+    margin-top: -15px;
+}
+
+img {
+    display: inline-block;
+    position: relative;
+    margin-right: 25px;
+}
+
+#test {
+    display: inline-block;
+    height: 353px;
+    width: 200px;
+    border: 1px solid blue;
+}
