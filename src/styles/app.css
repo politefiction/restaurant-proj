@@ -1,3 +1,7 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 div {
     background-color:#b5bba3;
     padding:10px;
@@ -9,14 +13,40 @@ div {
 }
 
 img {
-    display: inline-block;
-    position: relative;
+    float: left;
     margin-right: 25px;
 }
 
-#test {
-    display: inline-block;
+#main {
+    display: inline-flex;
     height: 353px;
-    width: 200px;
+    width: 300px;
     border: 1px solid blue;
+}
+
+.tab {
+    display: inline-block;
+    height: 15px;
+    width: 75px;
+    border-radius: 5px 5px 0 0;
+    background-color: #7a785f;
+    color: #ede9b1;
+}
+
+.tab-div {
+    position: relative;
+    padding: 0;
+    border: 1px solid red;
+    margin: -10px 0 0 -10px;
+}
+
+#selected {
+    background-color: #ede9b1;
+    color: #7a785f;
+}
+
+#tab-box {
+    width: 200px;
+    background-color: #ede9b1;
+    color: #7a785f;
 }

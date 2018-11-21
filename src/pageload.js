@@ -16,10 +16,10 @@ const loadPage = () => {
     let image = new Image(250);
     image.src = "/home/chelsi/Pictures/kaboompics_pizza.jpg";
 
-    let testDiv = document.createElement('div');
-    testDiv.setAttribute("id", "test");
+    let main = document.createElement('div');
+    main.setAttribute("id", "main");
 
-    [heading, image, testDiv].forEach(element => { content.appendChild(element) })
+    [heading, image, main].forEach(element => { content.appendChild(element) })
 }
 
 export default loadPage;
