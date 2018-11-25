@@ -1,9 +1,9 @@
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:#b5bba3;
 }
 
 div {
-    background-color:#b5bba3;
     padding:10px;
 }
 
@@ -18,26 +18,37 @@ img {
 }
 
 #main {
-    display: inline-flex;
-    height: 353px;
-    width: 300px;
-    border: 1px solid blue;
+    display: inline-block;
+    margin-top: -10px;
 }
 
-.tab {
-    display: inline-block;
-    height: 15px;
-    width: 75px;
-    border-radius: 5px 5px 0 0;
+input {
+    display: none;
+}
+
+.tab-button {
+    display: inline-flex;
+    height: 20px;
+    width: 80px;
+    padding: 5px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius: 2px 5px 0 0;
     background-color: #7a785f;
     color: #ede9b1;
 }
 
-.tab-div {
-    position: relative;
-    padding: 0;
-    border: 1px solid red;
-    margin: -10px 0 0 -10px;
+.tab-button:hover {
+    background-color: #64634e;
+}
+
+.tab {
+    display: block;
+    width: 500px;
+    height: 500px;
+    margin-left: -10px;
+    background-color: #ede9b1;
+    color: #7a785f;
 }
 
 #selected {
