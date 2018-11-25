@@ -1,32 +1,32 @@
 const loadTabs = () => {
     
-    let main = document.createElement('div');
+    const main = document.createElement('div');
     main.setAttribute("id", "main");
 
-    let tabOneButton = document.createElement("input");
+    const tabOneButton = document.createElement("input");
     tabOneButton.setAttribute("type", "radio");
     tabOneButton.setAttribute("id", "tab1");
-    //setAttributes(tabOne, { "type": "radio", "class": "tab", "name": "tab" })
 
-    let tabOneLabel = document.createElement("label");
+    const tabOneLabel = document.createElement("label");
     tabOneLabel.setAttribute("class", "tab-button");
     tabOneLabel.setAttribute("for", "tab1");
-    tabOneLabel.textContent = "Tab One";
+    tabOneLabel.textContent = "About Us";
 
-    let tabTwoButton = document.createElement("input");
+    const tabTwoButton = document.createElement("input");
     tabTwoButton.setAttribute("type", "radio");
     tabTwoButton.setAttribute("id", "tab2");
 
-    let tabTwoLabel = document.createElement("label");
+    const tabTwoLabel = document.createElement("label");
     tabTwoLabel.setAttribute("class", "tab-button");
     tabTwoLabel.setAttribute("for", "tab2");
-    tabTwoLabel.textContent = "Tab Two";
+    tabTwoLabel.textContent = "Menu";
 
-    let tabContent = document.createElement('div');
+    const tabContent = document.createElement('div');
     tabContent.setAttribute("class", "tab");
 
     main.appendChild(tabOneButton);
     main.appendChild(tabOneLabel);
+    main.appendChild(tabTwoButton);
     main.appendChild(tabTwoLabel);
     main.appendChild(tabContent);
 
@@ -35,13 +35,3 @@ const loadTabs = () => {
 }
 
 export default loadTabs;
-
-/*
-    const setAttributes = (e, attrs) => {
-        attrs.map((k,v) => {
-            e.setAttribute(k, v);
-        })
-    }
-
-    setAttributes(tabOne, { "type": "radio", "class": "tab", "name": "tab" })
-*/

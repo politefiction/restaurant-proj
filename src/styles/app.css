@@ -29,10 +29,9 @@ input {
 .tab-button {
     display: inline-flex;
     height: 20px;
-    width: 80px;
+    width: 100px;
     padding: 5px;
-    margin-top: -10px;
-    margin-left: -10px;
+    margin: -10px 0 0 -10px;
     border-radius: 2px 5px 0 0;
     background-color: #7a785f;
     color: #ede9b1;
