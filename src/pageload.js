@@ -9,7 +9,7 @@ const loadPage = () => {
 
     let copy = document.createElement('p');
     copy.setAttribute("id", "copy");
-    copy.textContent = "Serving up classic Italian favorites with names vaguely inspired by musical artist D'Angelo since 2018";
+    copy.textContent = "Serving up classic Italian favorites with names inspired by musical artist D'Angelo since 2018";
 
     [title, copy].map(e => { heading.appendChild(e) });
 

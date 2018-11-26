@@ -12,10 +12,11 @@ div {
     margin-top: -15px;
 }
 
-img {
+#content img {
     float: left;
     margin-right: 25px;
 }
+
 
 #main {
     display: inline-block;
@@ -41,13 +42,17 @@ input {
     background-color: #64634e;
 }
 
-.tab {
+#tab {
     display: block;
-    width: 500px;
-    height: 500px;
+    width: 550px;
+    height: auto;
     margin-left: -10px;
     background-color: #ede9b1;
     color: #7a785f;
+}
+
+#tab img {
+    width: 400px;
 }
 
 #selected {

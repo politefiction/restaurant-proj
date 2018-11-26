@@ -22,13 +22,11 @@ const loadTabs = () => {
     tabTwoLabel.textContent = "Menu";
 
     const tabContent = document.createElement('div');
-    tabContent.setAttribute("class", "tab");
+    tabContent.setAttribute("id", "tab");
 
-    main.appendChild(tabOneButton);
-    main.appendChild(tabOneLabel);
-    main.appendChild(tabTwoButton);
-    main.appendChild(tabTwoLabel);
-    main.appendChild(tabContent);
+    [tabOneButton, tabOneLabel, tabTwoButton, tabTwoLabel, tabContent].forEach(e => {
+        main.appendChild(e);
+    })
 
     document.querySelector("body").appendChild(main);
 
