@@ -8,5 +8,3 @@ const showTabOne = () => {
 }
 
 export default showTabOne;
-
-//<img src="/home/chelsi/Pictures/kaboompics_restaurant.jpg" />
